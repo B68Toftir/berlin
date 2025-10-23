@@ -1,0 +1,131 @@
+<!--
+Autor : Carles Rodriguez i Rovira
+Asignatura : LMGSI
+Unidad UD 2
+Tarea : TaEv 02 - Sitio web
+Documento reflexión : https://docs.google.com/document/d/1mDlYlbuC_e-4_z0epbCy7KzF7HWlWU9I/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true
+Ver website : https://b68toftir.github.io/berlin/
+Fecha : 2025-10-24
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- Encabezado de la página -->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="Berlin" content="Berlin"/>
+        <title>Berlin, das Wunder</title>
+        <link rel="icon" type="image/png" href="../../imagenes/berlinicon.png">
+        <link rel="stylesheet" href="../../css/estilos.css">
+
+    </head>
+
+    <!-- Contenido de la página -->
+    <body>
+        <!-- Se pone un banner y un título -->
+        <!-- Creo una clase para poder poner Berlin, dentro del banner -->
+        <!-- Creo un script para elegir aleatoriamente un banner -->
+        <header class="banner-contenidor">    
+            <script>
+                const imatges = [
+                '../../imagenes/banner/berlin01.jpg',
+                '../../imagenes/banner/berlin02.jpg',
+                '../../imagenes/banner/berlin03.jpg',
+                '../../imagenes/banner/berlin04.jpg',
+                '../../imagenes/banner/berlin05.jpg',
+                '../../imagenes/banner/berlin06.jpg',
+                '../../imagenes/banner/berlin07.jpg'
+                ];
+            
+            const indexAleatori = Math.floor(Math.random() * imatges.length);
+            const rutaSeleccionada = imatges[indexAleatori];
+            document.write('<img src="' + rutaSeleccionada + '" alt="Berlin, Imatge Aleatòria">');
+            </script>   
+
+            <h1 class="titol-banner">BERLIN</h1>
+        </header>
+
+        <!-- En este section van los enlaces a las páginas principales de la web -->
+        <section class="menu">
+            <article><a href="../../index.html" class="boto">INICIO</a></article>
+            <article><a href="../disfruta.html" class="boto">DISFRUTA</a></article>
+            <article><a href="../noticias.html" class="boto">NOTICIAS</a></article>
+            <article><a href="../contacto.html" class="boto">CONTACTO</a></article>
+        </section>
+
+        <!-- En este section agrupo las opciones del menú lateral para las actividades -->
+        <!-- y el contenido de una excursión a hacer--->
+         <section class="contingut-activitats"> 
+            
+            <!--Agrupo las categorias del menú lateal para las actividades -->
+            <nav class="menus">
+                <h2>CATEGORÍAS</h2>    
+                <ul>
+                    <li><article><a href="../disfruta.html" class="boto2">LUGARES</a></article></li>
+                    <li><article><a href="../museos.html" class="boto2">MUSEOS</a></article></li>
+                    <li><article><a href="../excursiones.html" class="boto2">EXCURSIONES</a></article></li>
+                    <li><article><a href="../ocio.html" class="boto2">OCIO</a></article></li>
+                </ul>    
+            </nav>
+        
+
+        <!-- Main, presentación de la web -->
+        <!-- Muestro la info para la excursión a Saschenhausen -->
+            <main>
+                <section class="activitats">
+                    <h3 class="titol">EXCURSIONES CERCA DE BERLIN</h3> 
+                     <article class="apartat-contingut">
+                        <h2>SACHSENHAUSEN</h2>
+                        <div class="noticia">
+                            <img src="../../imagenes/excursion/sachsenhausen.jpg" alt="Sachsenhausen">
+                            <p>
+                                El 21 de marzo de 1933, justo en el centro de la ciudad de Oranienburg, cerca de Berlín, 
+                                el edificio de una fábrica abandonada se convertía en el primer campo de concentración de Prusia. 
+                                Hoy, el Monumento a Sachsenhausen cuenta la historia del campo de concentración en los lugares 
+                                donde tuvo lugar.<br><br> 
+                                
+                                El lugar donde se encuentra hoy el Monumento a Sachsenhausen fue uno de los mayores campos de 
+                                concentración del territorio alemán entre 1936 y 1945. El edificio en T albergaba la oficina 
+                                de administración central de todos los campos de concentración. La parte del campo conocida como 
+                                “Campo de Interés”, junto con numerosos campos auxiliares, alojó alrededor de 200.000 reclusos 
+                                que fueron esclavizados y explotados como fuerzas de trabajo por las locales. Decenas de miles 
+                                de prisioneros murieron como resultado del trabajo inhumano, las condiciones de vida y el trato 
+                                brutal, o fueron gaseados, fusilados o víctimas de experimentos médicos.<br><br> 
+
+                                En abril de 1945, con el Ejército Rojo en las inmediaciones, las SS comenzaron a evacuar
+                                el campo y enviaron a los reclusos a las llamadas “marchas de la muerte”, en las cuales miles 
+                                de ellos fueron ejecutaros o murieron de agotamiento. Hoy, una parte del monumento conmemora 
+                                las “marchas de la muerte” con una exposición en Belower Wald.<br><br> 
+
+                                El 22 y 23 de abril de 1945, las tropas soviéticas y polacas llegaron al campo. Incluso después 
+                                de su liberación cientos de personas fallecieron a causa de su encarcelamiento.<br><br> 
+
+                                Recomendamos que se contrate un tour en castellano, donde el guía se encargará de todo.
+                                
+                                <h4>Horario</h4>
+
+                                <ul>
+                                    <li>Desde el 15 de marzo hasta el 14 de octubre, abre todos los días de 8.30 a 18 horas.</li>
+                                    <li>Desde el 15 de octubre al 14 de marzo abre diariamente pero cierra a las 16.30 de la tarde.</li>
+                                </ul>
+                                
+                                <h4>Como llegar</h4>
+
+                                <ul>
+                                    <li>S-Bahn S1, bajar en la estación de S Oranienburg Bhf.</li>
+                                    <li>Tren Regional Express RE5, bajar en la estación de S Oranienburg Bhf.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </article>
+                </section>                          
+            </main>
+        </section>
+
+        <!-- Footer, autor de la web -->
+        <footer>
+            <a href="https://b68toftir.github.io/berlin/">Web sobre Berlin</a> © 2025 by <a href="https://creativecommons.org">Carles Rodriguez i Rovira</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        </footer>
+    </body>
+</html>

@@ -4,6 +4,7 @@ Asignatura : LMGSI
 Unidad UD 2
 Tarea : TaEv 02 - Sitio web
 Documento reflexión : https://docs.google.com/document/d/1mDlYlbuC_e-4_z0epbCy7KzF7HWlWU9I/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true
+Ver website : https://b68toftir.github.io/berlin/
 Fecha : 2025-10-24
 -->
 
@@ -15,6 +16,7 @@ Fecha : 2025-10-24
         <meta charset="utf-8"/>
         <meta name="Berlin" content="Berlin"/>
         <title>Berlin, das Wunder</title>
+        <link rel="icon" type="image/png" href="imagenes/berlinicon.png">
         <link rel="stylesheet" href="css/estilos.css">
 
     </head>
@@ -23,9 +25,24 @@ Fecha : 2025-10-24
     <body>
         <!-- Se pone un banner y un título -->
         <!-- Creo una clase para poder poner Berlin, dentro del banner -->
-        <!-- y desplazar la imagen dentro del banner -->
+        <!-- Creo un script para elegir aleatoriamente un banner -->
         <header class="banner-contenidor">    
-            <img src="imagenes/berlin01.jpg" alt="Berlin, Bundestag">     
+            <script>
+                const imatges = [
+                'imagenes/banner/berlin01.jpg',
+                'imagenes/banner/berlin02.jpg',
+                'imagenes/banner/berlin03.jpg',
+                'imagenes/banner/berlin04.jpg',
+                'imagenes/banner/berlin05.jpg',
+                'imagenes/banner/berlin06.jpg',
+                'imagenes/banner/berlin07.jpg'
+                ];
+            
+            const indexAleatori = Math.floor(Math.random() * imatges.length);
+            const rutaSeleccionada = imatges[indexAleatori];
+            document.write('<img src="' + rutaSeleccionada + '" alt="Berlin, Imatge Aleatòria">');
+            </script>  
+
             <h1 class="titol-banner">BERLIN</h1>
         </header>
 

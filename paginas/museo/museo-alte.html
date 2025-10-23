@@ -1,0 +1,125 @@
+<!--
+Autor : Carles Rodriguez i Rovira
+Asignatura : LMGSI
+Unidad UD 2
+Tarea : TaEv 02 - Sitio web
+Documento reflexión : https://docs.google.com/document/d/1mDlYlbuC_e-4_z0epbCy7KzF7HWlWU9I/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true
+Ver website : https://b68toftir.github.io/berlin/
+Fecha : 2025-10-24
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- Encabezado de la página -->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="Berlin" content="Berlin"/>
+        <title>Berlin, das Wunder</title>
+        <link rel="icon" type="image/png" href="../../imagenes/berlinicon.png">
+        <link rel="stylesheet" href="../../css/estilos.css">
+
+    </head>
+
+    <!-- Contenido de la página -->
+    <body>
+        <!-- Se pone un banner y un título -->
+        <!-- Creo una clase para poder poner Berlin, dentro del banner -->
+        <!-- Creo un script para elegir aleatoriamente un banner -->
+        <header class="banner-contenidor">    
+            <script>
+                const imatges = [
+                '../../imagenes/banner/berlin01.jpg',
+                '../../imagenes/banner/berlin02.jpg',
+                '../../imagenes/banner/berlin03.jpg',
+                '../../imagenes/banner/berlin04.jpg',
+                '../../imagenes/banner/berlin05.jpg',
+                '../../imagenes/banner/berlin06.jpg',
+                '../../imagenes/banner/berlin07.jpg'
+                ];
+            
+            const indexAleatori = Math.floor(Math.random() * imatges.length);
+            const rutaSeleccionada = imatges[indexAleatori];
+            document.write('<img src="' + rutaSeleccionada + '" alt="Berlin, Imatge Aleatòria">');
+            </script>  
+
+            <h1 class="titol-banner">BERLIN</h1>
+        </header>
+
+        <!-- En este section van los enlaces a las páginas principales de la web -->
+        <section class="menu">
+            <article><a href="../../index.html" class="boto">INICIO</a></article>
+            <article><a href="../disfruta.html" class="boto">DISFRUTA</a></article>
+            <article><a href="../noticias.html" class="boto">NOTICIAS</a></article>
+            <article><a href="../contacto.html" class="boto">CONTACTO</a></article>
+        </section>
+
+        <!-- En este section agrupo las opciones del menú lateral para las actividades -->
+        <!-- y el contenido de un museo para visitar --->
+        <section class="contingut-activitats"> 
+            
+            <!--Agrupo las categorias del menú lateal para las actividades -->
+            <nav class="menus">
+                <h2>CATEGORÍAS</h2>    
+                <ul>
+                    <li><article><a href="../disfruta.html" class="boto2">LUGARES</a></article></li>
+                    <li><article><a href="../museos.html" class="boto2">MUSEOS</a></article></li>
+                    <li><article><a href="../excursiones.html" class="boto2">EXCURSIONES</a></article></li>
+                    <li><article><a href="../ocio.html" class="boto2">OCIO</a></article></li>
+                </ul>    
+            </nav>
+        
+
+        <!-- Main, presentación de la web -->
+        <!-- Muestro la info del Alte Museum -->
+            <main>
+                <section class="activitats">
+                    <h3 class="titol">MUSEOS EN BERLIN</h3> 
+                     <article class="apartat-contingut">
+                        <h2><a href="hhttps://www.smb.museum/en/museums-institutions/altes-museum/about-us/profile/" target="_blank" class="boto-seguir">ALTES MUSEUM</a></h2>
+                        <div class="noticia">
+                            <img src="../../imagenes/museo/antiguo-museo.jpg" alt="Altes Museum">
+                            <p>
+                                El Altes Museum presenta el mundo de la Antigüedad clásica y le permite experimentar toda la riqueza de 
+                                este apasionante periodo de la historia de la humanidad. Admire las obras artísticas de griegos, 
+                                etruscos y romanos: desde arte pequeño y vasos hasta joyas y esculturas.<br><br>
+
+                                Un nuevo ideal educativo: el rey prusiano Federico Guillermo III como mecenas de la educación cultural
+                                Con el comienzo del siglo XIX, la burguesía de Prusia adquirió más confianza en sí misma. Querían que 
+                                las colecciones culturales reales fueran accesibles al pueblo. Este deseo se correspondía también 
+                                con el ideal educativo del erudito Wilhelm von Humboldt: todo el mundo debía poder desarrollarse 
+                                estudiando, entre otras cosas, las civilizaciones antiguas. Friedrich Wilhelm III compartía la 
+                                opinión de Humboldt y encargó la construcción del museo en 1825. Nombra maestro de obras al famoso 
+                                urbanista y arquitecto Karl Friedrich Schinkel. Schinkel diseñó la planta del Altes Museum en un 
+                                estilo clásico inspirado en la antigüedad griega. El edificio abre finalmente sus puertas en 1830.<br><br>
+
+                                <h4>Horario</h4>
+                                <ul>
+                                    <li>Lun - Mar. Cerrado</li>
+                                    <li>Mie - Dom. de 10:00 a 18:00</li>
+                                </ul>
+
+                                <h4>Como llegar</h4>
+                                <ul>
+                                    <li>Metro: Friedrichstraße, línea U6.</li>
+                                    <li>Tren: Friedrichstraße, líneas S1, S2, S5, S7, S9, S25 y S75.</li>
+                                </ul>
+
+                                <table class="seguir">
+                                    <tr>
+                                        <td><a href="https://shop.smb.museum/#/tickets/time?museum_id=12&group=day&lang=de" target="_blank" class="boto-seguir">COMPRA TUS ENTRADAS</a></td>
+                                    </tr>                                    
+                                </table>
+                            </p>
+                        </div>
+                    </article>
+                </section>                          
+            </main>
+        </section>
+
+        <!-- Footer, autor de la web -->
+        <footer>
+            <a href="https://b68toftir.github.io/berlin/">Web sobre Berlin</a> © 2025 by <a href="https://creativecommons.org">Carles Rodriguez i Rovira</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        </footer>
+    </body>
+</html>

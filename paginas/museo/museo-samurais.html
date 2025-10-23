@@ -1,0 +1,113 @@
+<!--
+Autor : Carles Rodriguez i Rovira
+Asignatura : LMGSI
+Unidad UD 2
+Tarea : TaEv 02 - Sitio web
+Documento reflexión : https://docs.google.com/document/d/1mDlYlbuC_e-4_z0epbCy7KzF7HWlWU9I/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true
+Ver website : https://b68toftir.github.io/berlin/
+Fecha : 2025-10-24
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- Encabezado de la página -->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="Berlin" content="Berlin"/>
+        <title>Berlin, das Wunder</title>
+        <link rel="icon" type="image/png" href="../../imagenes/berlinicon.png">
+        <link rel="stylesheet" href="../../css/estilos.css">
+
+    </head>
+
+    <!-- Contenido de la página -->
+    <body>
+        <!-- Se pone un banner y un título -->
+        <!-- Creo una clase para poder poner Berlin, dentro del banner -->
+        <!-- Creo un script para elegir aleatoriamente un banner -->
+        <header class="banner-contenidor">    
+            <script>
+                const imatges = [
+                '../../imagenes/banner/berlin01.jpg',
+                '../../imagenes/banner/berlin02.jpg',
+                '../../imagenes/banner/berlin03.jpg',
+                '../../imagenes/banner/berlin04.jpg',
+                '../../imagenes/banner/berlin05.jpg',
+                '../../imagenes/banner/berlin06.jpg',
+                '../../imagenes/banner/berlin07.jpg'
+                ];
+            
+            const indexAleatori = Math.floor(Math.random() * imatges.length);
+            const rutaSeleccionada = imatges[indexAleatori];
+            document.write('<img src="' + rutaSeleccionada + '" alt="Berlin, Imatge Aleatòria">');
+            </script>  
+
+            <h1 class="titol-banner">BERLIN</h1>
+        </header>
+
+        <!-- En este section agrupo las opciones del menú lateral para las actividades -->
+        <!-- y el contenido de un museo para visitar --->
+        <section class="contingut-activitats"> 
+            
+            <!--Agrupo las categorias del menú lateal para las actividades -->
+            <nav class="menus">
+                <h2>CATEGORÍAS</h2>    
+                <ul>
+                    <li><article><a href="../disfruta.html" class="boto2">LUGARES</a></article></li>
+                    <li><article><a href="../museos.html" class="boto2">MUSEOS</a></article></li>
+                    <li><article><a href="../excursiones.html" class="boto2">EXCURSIONES</a></article></li>
+                    <li><article><a href="../ocio.html" class="boto2">OCIO</a></article></li>
+                </ul>    
+            </nav>
+        
+
+        <!-- Main, presentación de la web -->
+        <!-- Muestro la info del museo de los Samurais -->
+            <main>
+                <section class="activitats">
+                    <h3 class="titol">MUSEOS EN BERLIN</h3> 
+                     <article class="apartat-contingut">
+                        <h2><a href="https://samuraimuseum.de/privatmuseum/" target="_blank" class="boto-seguir">MUSEO DE LOS SAMURAIS</a></h2>
+                        <div class="noticia">
+                            <img src="../../imagenes/museo/samurais-museo.png" alt="Museo Samurais">
+                            <p>
+                                Con más de 4.000 artefactos históricos, ¡este museo es una visita obligada! Ubicado exclusivamente 
+                                en Berlín Mitte, alberga la colección privada de arte samurái más importante del mundo, solo superada 
+                                por la de Tokio. Sigue al zorro, Kitsune, a través del fascinante mundo de las leyendas samuráis de 
+                                Japón. Sumérgete de forma interactiva en el estilo de vida, los sistemas de valores y la herencia de 
+                                esta influyente era gracias a la tecnología multimedia más avanzada. Aquí podrás descubrir magníficas
+                                armaduras, elaboradas espadas y máscaras, un teatro Nō original y una casa de té tradicional con 
+                                actuaciones holográficas exclusivas. ¡Este es el único Museo del Samurái de Europa —una experiencia 
+                                inolvidable para toda la familia!<br><br>
+
+                                <h4>Horarios</h4>
+                                <ul>
+                                    <li>Lunes a Domingo : 10:00 a 19:00</li>
+                                    <li>24 / 12 Cerradp</li>
+                                </ul> 
+
+                                <h4>Como llegar</h4>
+                                <ul>
+                                    <li>U-Bahn: U6, Oranienburger Tor, U8 Rosenthaler Platz.</li>
+                                    <li>S-Bahn: S1, S2, S25 y S26 Oranienburger Straße</li>
+                                </ul>
+
+                                <table class="seguir">
+                                    <tr>
+                                        <td><a href="https://samuraimuseum.de/privatmuseum/" target="_blank" class="boto-seguir">IR A LA WEB</a></td>
+                                    </tr>                                    
+                                </table>
+                            </p>
+                        </div>
+                    </article>
+                </section>                          
+            </main>
+        </section>
+
+        <!-- Footer, autor de la web -->
+        <footer>
+            <a href="https://b68toftir.github.io/berlin/">Web sobre Berlin</a> © 2025 by <a href="https://creativecommons.org">Carles Rodriguez i Rovira</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        </footer>
+    </body>
+</html>
