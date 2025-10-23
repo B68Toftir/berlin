@@ -436,25 +436,12 @@ legend {
 }
 
 /***********************************************/
-/*** Clase del article que esta en la **********/
-/*** página de noticias de la web **************/ 
-/***********************************************/
-.noticies-contingut {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    max-height: 400px;
-}
-
-/***********************************************/
 /*** Clase del article que esta en las *********/
 /*** páginas de las diferentes propuestas de ***/ 
-/*** museos, ocio, excursiones y lugares  ******/ 
+/*** museos, ocio, excursiones y lugares, ******/ 
+/*** y también en noticias *********************/ 
 /***********************************************/
-.apartat-contingut {
+.noticies-contingut, .apartat-contingut {
     background: whitesmoke;
     width: 95%;
     display: flex;
@@ -462,6 +449,13 @@ legend {
     padding: 10px;
     box-sizing: border-box;
     border: 2px solid black;
+}
+
+/***********************************************/
+/*** Propiedad añadida a noticies-contingut ****/
+/***********************************************/
+.noticies-contingut {
+    max-height: 400px;
 }
 
 /***********************************************/
