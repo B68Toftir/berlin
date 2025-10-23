@@ -1,0 +1,483 @@
+/*
+Autor : Carles Rodriguez i Rovira
+Asignatura : LMGSI
+Unidad UD 2
+Tarea : TaEv 02 - Sitio web
+Documento reflexión : https://docs.google.com/document/d/1mDlYlbuC_e-4_z0epbCy7KzF7HWlWU9I/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true
+Fecha : 2025-10-24
+*/
+
+/***********************************************/
+/*** Hoja de estilos de la web *****************/
+/***********************************************/
+
+/***********************************************/
+/*** Estilos del body **************************/
+/***********************************************/
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color : whitesmoke;
+}
+
+/***********************************************/
+/*** Estilos de los links en texto *************/
+/***********************************************/
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active { color: red; }
+a:hover { color: black; }
+
+/***********************************************/
+/*** Estilos de los links dentro de celdas *****/
+/***********************************************/
+.boto:link, .boto:visited, .boto:active {
+    color: white;
+    text-decoration: none;
+}
+.boto:hover { color: black; }
+
+/***********************************************/
+/*** Estilos de los links dentro del nav *******/
+/***********************************************/
+.boto2:link, .boto2:visited, .boto2:active {
+    color: white; 
+    padding: 8px 15px;
+}
+
+.boto2:hover { color: red; }
+
+/***********************************************/
+/*** Estilo del boton de disfruta **************/
+/***********************************************/
+.boto-seguir:link, .boto-seguir:visited, .boto-seguir:active {
+    color: white;    
+}
+
+.boto-seguir:hover { color: red; }
+
+.boto-seguir {
+    padding: 6px 15px;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 5px;    
+}
+
+/***********************************************/
+/*** Estilos del header ************************/
+/*** Aqui va el banner de la web ***************/
+/***********************************************/
+header {
+    width: 1200px;       
+    height: 100px;      
+    margin: 0 auto;     
+    overflow: hidden;   
+    background: #333;
+    padding: 0;
+    height: 15vh;
+    border-radius: 5px;    
+}
+
+/***********************************************/
+/*** Clase del header para controlar la ********/
+/*** imagen de banner y el título **************/
+/***********************************************/
+.banner-contenidor {
+    position: relative;   
+    width: 100%;          
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/***********************************************/
+/*** Clase para las propiedades del banner *****/
+/***********************************************/
+.banner-contenidor img {
+    width: 100%;           
+    display: block;
+    height: auto;
+    position: relative;
+    top: -30px;
+}
+
+/***********************************************/
+/*** Clase para el título dentro del banner ****/
+/***********************************************/
+.titol-banner {
+    position: absolute;    
+    top: 20%;              
+    left: 50%;             
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    text-shadow: 
+        -2px -2px 0 black,  
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+    text-align: center;
+}
+
+/***********************************************/
+/*** Clase del section donde van los enlaces ***/
+/*** principales de la web : *******************/
+/*** Inicio, Disfruta, Noticias y Contacto *****/
+/***********************************************/
+.menu {
+    display: flex;
+    height: 15%;  
+    margin : 0 auto;
+    padding: 20px;
+    width: 600px;
+    height:50px;
+    height: 5vh;
+    align-content: center;
+}
+
+/***********************************************/
+/*** Aqui esta las propiedades de los enlaces **/
+/*** principales de la web *********************/
+/***********************************************/
+section article{
+    background:red;
+    color: white;
+    margin: 10px;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/***********************************************/
+/*** Clase para visualizar el contenido de las */
+/*** diferentes opciones del menu disfrutar ****/
+/***********************************************/
+.contingut-activitats{
+    display: flex;
+    flex-direction: row;
+    line-height: 22px;
+}
+
+/***********************************************/
+/*** Clase de la tabla, para visualizar ********/
+/*** para que el botón SEGUIR esté siempre *****/
+/*** en una posicion determianda ***************/
+/***********************************************/
+.seguir{
+    position: absolute;
+    bottom: 15px; 
+    right: 30px; 
+}
+
+/***********************************************/
+/*** Estilo del menu lateral de disfrutar ******/
+/***********************************************/
+nav {
+    width:16%;  
+    padding: 30px 15px;   
+} 
+
+/***********************************************/
+/*** Estilo del titulo menu lateral ************/
+/***********************************************/
+.menus h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    margin-left: 40px;
+}
+
+/***********************************************/
+/*** Estilo de lista desordenada menu **********/
+/***********************************************/
+.menus ul {
+    list-style: none;     
+    padding: 3px;          
+    margin: 3px;           
+}
+
+/***********************************************/
+/*** Estilo de componentes de la lista *********/
+/***********************************************/
+.menus li {
+    margin-bottom: 18px;   
+}
+
+/***********************************************/
+/*** Estilo del contenido de la lista **********/
+/***********************************************/
+.menus article {
+    background:black;
+    color: white;
+}
+
+/***********************************************/
+/*** Estilo del main ***************************/
+/***********************************************/
+main {
+    margin: 0 auto;
+    width: 80%;
+    height: 71vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/***********************************************/
+/*** Propiedades del mensaje de presentación ***/
+/*** de esta web *******************************/
+/***********************************************/
+main article{
+    font-size: 15px;
+    color:black;
+    padding: 15px 30px;
+    height: 500px;
+    text-align: justify;    
+    position: relative;
+}
+
+/***********************************************/
+/*** Clase para el estilo de las diferentes ****/
+/*** propuestas para disfrutar en Berlin *******/
+/***********************************************/
+.activitats {
+    background-color: whitesmoke;
+    flex-direction: column;
+    width: 75%;
+    display: flex; 
+    align-items: center;     
+    padding: 0px;
+    box-sizing: border-box;
+    max-height: 600px;      
+    overflow-y: auto;
+}
+
+/***********************************************/
+/*** Estilo del titulo de propuestas ***********/
+/***********************************************/
+.activitats h3 {
+    margin-top:20px;
+    text-decoration : underline;
+    font-size:30px;
+    text-align: left;
+}
+
+/***********************************************/
+/*** Clase para visualizar las propuestas ******/
+/*** que muestra disfrutar *********************/
+/***********************************************/
+.lloc {
+    width: 95%;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    max-height: 500px;
+}
+
+/***********************************************/
+/*** Clase para el titulo de propuestas ********/
+/***********************************************/
+.lloc h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/***********************************************/
+/*** Clase para la imagen en disfrutar *********/
+/***********************************************/
+.lloc img, .noticies-contingut img, .apartat-contingut img{
+    width: 200px;
+    height: 150px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    float:left
+}
+
+/***********************************************/
+/*** Clase para el texto de propuestas *********/
+/***********************************************/
+.lloc p {
+    flex: 1;
+    margin: 0;
+    text-align: justify;
+}
+
+/***********************************************/
+/*** Clase del título del article del main *****/
+/***********************************************/
+.titol {
+    font-size:26px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/***********************************************/
+/*** Clase con las propiedades de las **********/
+/*** imagenes dentro del div presentacio *******/
+/***********************************************/
+.imatge{
+    display: block;
+    width:150px;
+    height:250px;
+    padding: 70px 15px;
+}
+
+/***********************************************/
+/*** Estilos del footer ************************/
+/***********************************************/
+footer {
+    text-align: center; /* centra el text */
+    padding: auto 0;
+}
+
+/***********************************************/
+/*** Clase del main de la página contactos *****/ 
+/***********************************************/
+.contact {
+    display: flex; 
+    flex-direction: row; /* posar els divs en columna */ 
+    justify-content: center; /* centrar verticalment */ 
+    align-items: center;
+    gap: 25px;
+}
+
+/***********************************************/
+/*** Clase de los estilos en común de los dos **/
+/*** articles de la página contactos ***********/ 
+/***********************************************/
+.contacte, .xarxes {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: left; /* centra el text */
+    font-weight: bolder;
+    font-size: 14px;    /* opcional, augmentar mida */
+}
+
+/***********************************************/
+/*** Estilo del fieldset del formulario  *******/
+/*** de contactos ******************************/ 
+/***********************************************/
+fieldset > * {
+    margin-top: 10px; 
+}
+
+/***********************************************/
+/*** Estilo del legend del formulario  *********/
+/*** de contactos ******************************/ 
+/***********************************************/
+legend {
+    margin-bottom: 15px; 
+}
+
+/***********************************************/
+/*** Clase que complementa al article de las ***/
+/*** redes sociales ****************************/ 
+/***********************************************/
+.xarxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto);   
+    gap: 5px;                             
+    justify-items: center;                 
+    align-items: center;                 
+}
+/***********************************************/
+/*** Clase que da estilo al h2 del article *****/
+/*** de las redes sociales *********************/ 
+/***********************************************/
+.xarxes h2 {
+    grid-column: 1 / -1; 
+    margin: 0 0 10px 0; 
+    text-align: center;
+}
+
+/***********************************************/
+/*** Clase que da estilo a las imágenes ********/
+/*** de las redes sociales *********************/ 
+/***********************************************/
+.xarxes img {
+    width: 60px;      
+    height: 60px;
+    cursor: pointer; 
+    transition: transform 0.2s;
+}
+
+/***********************************************/
+/*** Clase que da cuando pasas por encima ******/
+/*** de las imagenes, se agranda ***************/ 
+/***********************************************/
+.xarxes img:hover {
+    transform: scale(1.1); /* efecte de zoom en hover */
+}
+
+/***********************************************/
+/*** Clase del section que esta en la **********/
+/*** página de noticias de la web **************/ 
+/***********************************************/
+.noticies {
+    background: whitesmoke;
+    flex-direction: column;
+    width: 75%;
+    display: flex; 
+    align-items: center;     
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-height: 1200px;
+    overflow-y: auto;
+}
+
+/***********************************************/
+/*** Clase del article que esta en la **********/
+/*** página de noticias de la web **************/ 
+/***********************************************/
+.noticies-contingut {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    max-height: 400px;
+}
+
+/***********************************************/
+/*** Clase del article que esta en las *********/
+/*** páginas de las diferentes propuestas de ***/ 
+/*** museos, ocio, excursiones y lugares  ******/ 
+/***********************************************/
+.apartat-contingut {
+    background: whitesmoke;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+/***********************************************/
+/*** Clase para el h4 que esta en article ******/
+/*** sólo es un subrrayado *********************/ 
+/***********************************************/
+.apartat-contingut h4{
+    text-decoration: underline;
+}
+
+/***********************************************/
+/*** Clase del div para el texto de las ********/
+/*** noticias o propuestas publicadas en web ***/ 
+/***********************************************/
+.noticia{
+    overflow-y: auto;
+    padding:10px;  
+}
+

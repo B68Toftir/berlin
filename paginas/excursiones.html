@@ -1,0 +1,125 @@
+<!--
+Autor : Carles Rodriguez i Rovira
+Asignatura : LMGSI
+Unidad UD 2
+Tarea : TaEv 02 - Sitio web
+Documento reflexión : https://docs.google.com/document/d/1mDlYlbuC_e-4_z0epbCy7KzF7HWlWU9I/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true
+Fecha : 2025-10-24
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- Encabezado de la página -->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="Berlin" content="Berlin"/>
+        <title>Berlin, das Wunder</title>
+        <link rel="stylesheet" href="../css/estilos.css">
+
+    </head>
+
+    <!-- Contenido de la página -->
+    <body>
+        <!-- Se pone un banner y un título -->
+        <!-- Creo una clase para poder poner Berlin, dentro del banner -->
+        <!-- y desplazar la imagen dentro del banner -->
+        <header class="banner-contenidor">    
+            <img src="../imagenes/berlin01.jpg" alt="Berlin, Bundestag">     
+            <h1 class="titol-banner">BERLIN</h1>
+        </header>
+
+        <!-- En este section van los enlaces a las páginas principales de la web -->
+        <section class="menu">
+            <article><a href="../index.html" class="boto">INICIO</a></article>
+            <article><a href="disfruta.html" class="boto">DISFRUTA</a></article>
+            <article><a href="noticias.html" class="boto">NOTICIAS</a></article>
+            <article><a href="contacto.html" class="boto">CONTACTO</a></article>
+        </section>
+
+        <!-- En este section agrupo las opciones del menú lateal para las actividades -->
+        <!-- y el contenido que aparecera en los diferentes temas de las actividades --->
+        <section class="contingut-activitats"> 
+            
+            <!--Agrupo las categorias del menú lateal para las actividades -->
+            <nav class="menus">
+                <h2>CATEGORÍAS</h2>    
+                <ul>
+                    <li><article><a href="disfruta.html" class="boto2">LUGARES</a></article></li>
+                    <li><article><a href="museos.html" class="boto2">MUSEOS</a></article></li>
+                    <li><article><a href="excursiones.html" class="boto2">EXCURSIONES</a></article></li>
+                    <li><article><a href="ocio.html" class="boto2">OCIO</a></article></li>
+                </ul>    
+            </nav>
+
+            <!-- Main, se situa a la derecha del nav -->
+            <!-- Es la página del contenido de la categoría EXCURSIONES-->
+            <!-- Agrupo en un section, todos los articles de Excursiones --> 
+            <main>                        
+                <section class="activitats">
+                    <h3 class="titol">EXCURSIONES EN BERLIN Y ALREDEDORES</h3> 
+                    <article class="lloc">
+                        <h2>POSTDAM</h2>
+                        <div class="contingut">
+                            <img src="../imagenes/excursion/BrandenburgerPostdam.jpg" alt="Brandenburger Tor Postdam">
+                            <p>
+                                Explore Potsdam en una excursión para ver los numerosos lugares de interés de Postdam. La ciudad es conocida 
+                                por su legado como la antigua residencia de los reyes de Prusia, con sus numerosos y únicos complejos de 
+                                palacios y parques, y la importante ciudad burguesa. Descubra el Palacio de Glienicke, puente Glienicke, 
+                                Palacio Cecilienhof, Alexandrowka, barrio holandés, Antiguo Mercado, Iglesia de San Nicolás, Puerta de 
+                                Brandeburgo y Palacio de Sanssouci con jardines.
+                            </p>
+                            <table class="seguir">
+                                <tr>
+                                    <td><a href="excursiones/postdam.html" class="boto-seguir">VER MAS</a></td>
+                                </tr>                                    
+                            </table>
+                        </div>
+                    </article>
+
+                    <article class="lloc">
+                        <h2>SACHSENHAUSEN</h2>
+                        <div class="contingut">
+                            <img src="../imagenes/excursion/sachsenhausen.jpg" alt="Sachsenhausen">
+                            <p>
+                                Dura, pero imprescindible. El campo de concentración de Sachsenhausen, ubicado en la población de Oranienburg, 
+                                en Brandeburgo, Alemania, fue construido por los nazis en 1936 para confinar o liquidar 
+                                masivamente a opositores políticos, judíos, gitanos, homosexuales, posteriormente también
+                                prisioneros de guerra y finalmente Testigos de Jehová. Aproximadamente 50 000 prisioneros
+                                de todo tipo fueron asesinados dentro del campo.
+                            </p>
+                            <table class="seguir">
+                                <tr>
+                                    <td><a href="excursiones/saschenhausen.html" class="boto-seguir">VER MAS</a></td>
+                                </tr>                                    
+                            </table>
+                        </div>
+                    </article>
+
+                    <article class="lloc">
+                        <h2>EXCURSIÓN EN BICI POR EL MURO DE BERLIN</h2>
+                        <div class="contingut">
+                            <img src="../imagenes/excursion/muro.jpg" alt="Tour de la cerveza">
+                            <p>
+                                Una visita a Berlín no es completa sin probar su famosa cerveza en los típicos Biergarten, 
+                                típicas terrazas en las que se reúnen los locales y algún turista, para beber grandes cantidades 
+                                de cerveza acompañadas muchas veces de un buen plato de currywurst, la salchicha alemana cocida o asada a la parrilla.
+                                Además de las habituales cervezas industriales de grandes marcas, en Berlín hay numerosos locales
+                                que sirven cerveza artesanal de mejor sabor y calidad.
+                            </p>
+                            <table class="seguir">
+                                <tr>
+                                    <td><a href="excursiones/muro.html" class="boto-seguir">VER MAS</a></td>
+                                </tr>                                    
+                            </table>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </section>
+        <!-- Footer, autor de la web -->
+        <footer>
+            (c) 2025 - Carles Rodriguez i Rovira
+        </footer>
+    </body>
+</html>
